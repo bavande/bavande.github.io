@@ -1,68 +1,179 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Bryan Van De Veire's Web Site: Home Page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-@import url(stylesheet.css);
-</style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Bryan Van De Veire's Web Site: Gallery</title>
 </head>
+<style>
+body {
+  font-family: Verdana, Arial, serif;
+  font-size: 100%;
+  background-color: white;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  float: left;
+  margin-right: 10px;
+}
+li:last-of-type {
+  margin-right: 0;
+}
+
+a {
+  display: block;
+}
+
+img {
+  width: 200px;
+  height: 150px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  transition: transform 0.3s linear;
+}
+a:hover #img1, a:focus #img1 {
+  transform: rotate(-3deg) scale(1.5);
+} 
+a:hover #img2, a:focus #img2 {
+  transform: rotate(5deg) scale(1.5); 
+} 
+a:hover #img3, a:focus #img3 { 	
+  transform: rotate(-7deg) scale(1.5); 
+} 
+a:hover #img4, a:focus #img4 { 	
+  transform: rotate(2deg) scale(1.5); 
+}  
+a:hover #img5, a:focus #img5 { 	
+  transform: rotate(-5deg) scale(1.5); 
+}  
+a:hover #img6, a:focus #img6 { 	
+  transform: rotate(4deg) scale(1.5); 
+}  
+a:hover #img7, a:focus #img7 { 	
+  transform: rotate(-3deg) scale(1.5); 
+}  
+a:hover #img8, a:focus #img8 { 	
+  transform: rotate(5deg) scale(1.5); 
+}  
+a:hover #img9, a:focus #img9 { 	
+  transform: rotate(-7deg) scale(1.5); 
+}  
+a:hover #img10, a:focus #img10 { 	
+  transform: rotate(2deg) scale(1.5); 
+}  
+a:hover img { 	
+  box-shadow: 6px 6px 6px rgba(0,0,0,.3); 
+} 
+
+nav, footer {
+  font-family: verdana, sans-serif;
+  background-color: #783F27;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: #F9AB33;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+  color: #fff;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+ font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  flex: 1 1 50%;
+}
+nav ul li a { 	
+  display: block; 	
+  border: 1px solid; 
+  padding: .5em 1em; 	
+  border-radius: .5em; 
+  margin: .25em; 
+  } 	
+
+  ul { 	
+    display: block; 	
+    border: 1px solid; 
+    padding: .5em 1em; 	
+    border-radius: .5em; 
+    margin: .25em;
+    Color: #000 
+    } 	
+
+/* link styles */
+a:link, a:visited { color: #DC6903; }
+a:focus, a:hover, a:active { color: #F9AB33; }
+
+@media screen and (min-width: 400px) {
+  nav ul li {
+    flex: none;
+  }
+  nav ul {
+    justify-content: center; 
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  header p {
+    display: block;
+    margin-top: -1.5em;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.2em;
+  }
+  main, h2, h3 {
+    font-family: 'Stint Ultra Expanded', Georgia, serif; 
+  }
+  h2, h3 {
+    font-weight: bold;
+  }
+  main {
+    line-height: 1.8em;
+    padding: .5em;
+    border: double 4px #EADDC4;
+    border-radius: 25px;
+    margin: 2.5%; 
+  }
+}
+
+</style>
 
 <body>
-
 <header>
-<nav>
-  <ul>
-    <li><a href="index.html">Home Page</a></li>
-    <li><a href="projects/index.html">Projects</a></li>
-    <li><a href="Resume.html">Resume</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-  </ul>
-</nav>  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="projects/index.html">Projects</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>  
 </header>
 
-<main>
-<p>
 
-<h1>My Resume</h1>
+<br>
+<ul>
+  <li><a href=""><img src="Images/Cliff Jump.jpg" id="img1" alt="Cliff Jump Picture"></a></li>
+  <li><a href=""><img src="Images/CliffJump2.jpg" id="img2" alt="Cliff Jump Picture 2"></a></li>
+  <li><a href=""><img src="Images/CliffJump3.jpg" id="img3" alt="Cliff Jump Picture 3"></a></li>
+  <li><a href=""><img src="Images/MountainsPic.jpg" id="img4"alt="Me In The Mountains"></a></li>
+  <li><a href=""><img src="Images/ResBMX.jpg" id="img5"alt="BMX At The Reservoir"></a></li>
+  <li><a href=""><img src="Images/RiverwalkBMX.jpg" id="img6"alt="BMX Tricks At The Riverwalk"></a></li>
+  <li><a href=""><img src="Images/SeniorPhoto.jpg" id="img7"alt="High School Senior Photo"></a></li>
+  <li><a href=""><img src="Images/TieDyeTacoTuesday.jpg" id="img8"alt="Tie-Dye Taco Tuesday"></a></li>
+  <li><a href=""><img src="Images/Whip BMX.jpg" id="img9"alt="Flatland BMX tricks"></a></li>
+  <li><a href=""><img src="Images/1stAlbumCover.jpg" id="img10"alt="1st Album Cover"></a></li>
 
-<h3>Name:</h3> 
-  <h2>Bryan Van De Veire</h2>
-
-<h3>Phone Number:</h3> 
-  <h2>719-553-7158</h2>
-
-<h3>Email:</h3> 
-  <h2>vandeveire.bryan@gmail.com </h2>
-
-<h3>Location:</h3> 
-  <h2>Pueblo, CO</h2>
-
-<h3>Skills:</h3>
-  <ul>Organizational Skills</ul>
-  <ul>Math Skills </ul>
-  <ul>Project Management</ul>
-  <ul>Dependable</ul>
-  <ul>Computer Skills</ul>
-  <ul>Multi-Tasking</ul>
-
-<h3>Experience:</h3> 
-  <h2>Honors Program Peer Mentor</h2>
-  <h4>Colorado State University- Pueblo</h4>
-  <h4>Location: Pueblo, CO</h4>
-  <h4>From: October 2017 - May 2019</h4>
-
-<h3>Education</h3>
-  <h2>Bachelor's Degree</h2>
-  <h4>Mass Communications w/ an Emphasis in Electronic Media & Honors</h4>
-  <h4>Colorado State University - Pueblo</h4>
-  <h4>Pueblo, CO</h4>
-  <h4>May 2017 - May 2022</h4>
-
-</p>
-
-</main>
-</div>
+</ul>
 </body>
 </html>

@@ -1,77 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<title>Bryan's Web Site: Completed Chapter Exercises</title>
+<!doctype html>
+<html>
+  
+<head>
 <meta charset="UTF-8">
+<title>Bryan Van De Veire's Web Site: Projects</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
-.w3-third img:hover{opacity: 1}
+@import url(../stylesheet.css);
 </style>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
+</head>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b>Completed<br>Chapter<br>Exercises</b></h3>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="../index.html" class="w3-bar-item w3-button">Home</a> 
-  <a href="index.html" class="w3-bar-item w3-button">Projects</a> 
-  <a href="../resume.html" class="w3-bar-item w3-button">Resume</a>
-  <a href="../gallery.html" class="w3-bar-item w3-button">Gallery</a>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">Completed Chapter Exercises</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+<body>
+<header>
+<nav>
+  <ul>
+    <li><a href="../index.html">Home Page</a></li>
+    <li><a href="index.html">Projects</a></li>
+    <li><a href="../Resume.html">Resume</a></li>
+    <li><a href="../gallery.html">Gallery</a></li>
+  </ul>
+</nav>  
 </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
-
-  <!-- Push down content on small screens --> 
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-
-  <!-- About section -->
-  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
-    <h4><b>About Me</b></h4>
-    <img src="Images/Bryan Avatar.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
-    <div class="w3-content w3-justify" style="max-width:600px">
-      <h4>Bryan Van De Veire</h4>
-      <p>Welcome to Bryan’s website for MC 232: Website Design! Bryan Van De Veire was born and raised in Pueblo, Colorado and is currently a student at Colorado State University Pueblo working towards earning his bachelor’s degree in Mass Communications with an emphasis in Electronic Media as well as an emphasis in Honors. After college he aspires to buy his own house and find a good paying job that is close to his hometown so he can stay relatively close to my family. He is hopeful that one day he can start his own Tie-Dye T-shirt business and become an entrepreneur, so he is not forced to work for someone else the rest of his life. In his free time, he enjoys playing video games, riding his BMX bike, rock climbing, and cliff jumping since those have always been activities that he has always been good at. His favorite accomplishment in college so far would have to be whenever he worked with the Honors program to create a STEM program at Baca Elementary School teaching children how to create sustainable gardens and the importance of gardening. Overall, he still has lots of learning and living to do since he is still extremely young at 22 years old, but he is hopeful that these lessons that he has learned in life and college will lead to him living a life that spreads positive changes throughout his local community. </p>
-      <hr class="w3-opacity">
-    
-<!-- End page content -->
+<main>
+<h2>Projects</h2>
+<h3>Project List</h3>
+<p>
+  <li><a href="../projects/ch04/Ch4Projects.html">Chapter 4</a></li>
+  <li><a href="../projects/ch05/CH5Projects.html">Chapter 5</a></li>
+  <li><a href="../projects/ch06/Ch6Projects.html">Chapter 6</a></li>
+  <li><a href="../projects/ch07/Ch7Projects.html">Chapter 7</a></li>
+  <li><a href="../projects/ch08/CH08_exercises_finished.html">Chapter 8</a></li>
+  <li><a href="../projects/ch09/pizza.html">Chapter 9</a></li>
+  <li><a href="../projects/ch10/exercise10-2_final.html">Chapter 10</a></li>
+  <li><a href="../projects/ch11/Ch11Projects.html">Chapter 11</a></li>
+  <li><a href="../projects/ch12/Ch12Projects.html">Chapter 12</a></li>
+  <li><a href="../projects/ch13/Ch13Projects.html">Chapter 13</a></li>
+  <li><a href="../projects/ch14/Ch14Projects.html">Chapter 14</a></li>
+  <li><a href="../projects/ch15/Ch15Projects.html">Chapter 15</a></li>
+  <li><a href="../projects/ch16/Ch16Projects.html">Chapter 16</a></li>
+  <li><a href="../projects/ch17/bakery.html">Chapter 17</a></li>
+</p>
+</main>
 </div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-</script>
-
-
 </body>
 </html>

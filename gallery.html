@@ -1,102 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<title>Bryan's Web Site: Gallery</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Bryan Van De Veire's Web Site: Gallery</title>
+</head>
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
-.w3-third img:hover{opacity: 1}
+body {
+  font-family: Verdana, Arial, serif;
+  font-size: 100%;
+  background-color: white;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  float: left;
+  margin-right: 10px;
+}
+li:last-of-type {
+  margin-right: 0;
+}
+
+a {
+  display: block;
+}
+
+img {
+  width: 200px;
+  height: 150px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  transition: transform 0.3s linear;
+}
+a:hover #img1, a:focus #img1 {
+  transform: rotate(-3deg) scale(1.5);
+} 
+a:hover #img2, a:focus #img2 {
+  transform: rotate(5deg) scale(1.5); 
+} 
+a:hover #img3, a:focus #img3 { 	
+  transform: rotate(-7deg) scale(1.5); 
+} 
+a:hover #img4, a:focus #img4 { 	
+  transform: rotate(2deg) scale(1.5); 
+}  
+a:hover #img5, a:focus #img5 { 	
+  transform: rotate(-5deg) scale(1.5); 
+}  
+a:hover #img6, a:focus #img6 { 	
+  transform: rotate(4deg) scale(1.5); 
+}  
+a:hover #img7, a:focus #img7 { 	
+  transform: rotate(-3deg) scale(1.5); 
+}  
+a:hover #img8, a:focus #img8 { 	
+  transform: rotate(5deg) scale(1.5); 
+}  
+a:hover #img9, a:focus #img9 { 	
+  transform: rotate(-7deg) scale(1.5); 
+}  
+a:hover #img10, a:focus #img10 { 	
+  transform: rotate(2deg) scale(1.5); 
+}  
+a:hover img { 	
+  box-shadow: 6px 6px 6px rgba(0,0,0,.3); 
+} 
+
+nav, footer {
+  font-family: verdana, sans-serif;
+  background-color: #783F27;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: #F9AB33;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+  color: #fff;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+ font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  flex: 1 1 50%;
+}
+nav ul li a { 	
+  display: block; 	
+  border: 1px solid; 
+  padding: .5em 1em; 	
+  border-radius: .5em; 
+  margin: .25em; 
+  } 	
+
+/* link styles */
+a:link, a:visited { color: #DC6903; }
+a:focus, a:hover, a:active { color: #F9AB33; }
+
+@media screen and (min-width: 400px) {
+  nav ul li {
+    flex: none;
+  }
+  nav ul {
+    justify-content: center; 
+  }
+}
+
 </style>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b>Bryan's<br>Gallery</b></h3>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="index.html" class="w3-bar-item w3-button">Home</a> 
-  <a href="projects/index.html" class="w3-bar-item w3-button">Projects</a> 
-  <a href="resume.html" class="w3-bar-item w3-button">Resume</a>
-  <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">Bryan's Gallery</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="projects/index.html">Projects</a></li>
+      <li><a href="Resume.html">Resume</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>  
 </header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
-
-  <!-- Push down content on small screens --> 
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-  <!-- Photo grid -->
-  <div class="w3-row">
-    <div class="w3-third">
-      <img src="Images/Whip BMX.jpg" style="width:100%" onclick="onClick(this)" alt="Whipping Around Town On My Ride">
-      <img src="Images/Cliff Jump.jpg" style="width:100%" onclick="onClick(this)" alt="Cliff Jumping">
-      <img src="Images/MountainsPic.jpg" style="width:100%" onclick="onClick(this)" alt="Pondering Life">
-    </div>
-
-    <div class="w3-third">
-      <img src="Images/TieDyeTacoTuesday.jpg" style="width:100%" onclick="onClick(this)" alt="Polaroids of High School Memories">
-      <img src="Images/CliffJump2.jpg" style="width:100%" onclick="onClick(this)" alt="Over Rotated The Backflip LMAO">
-      <img src="Images/ResBMX.jpg" style="width:100%" onclick="onClick(this)" alt="Look Ma! No Hands!">
-    </div>
-    
-    <div class="w3-third">
-      <img src="Images/SeniorPhoto.jpg" style="width:100%" onclick="onClick(this)" alt="High School Senior Photo">
-      <img src="Images/CliffJump3.jpg" style="width:100%" onclick="onClick(this)" alt="Cliff Jumping Again LOL">
-      <img src="Images/1stAlbumCover.jpg" style="width:100%" onclick="onClick(this)" alt="1st Song Cover">
-    </div>
-
-  </div>
-
-  
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-    </div>
 
 
-<!-- End page content -->
-</div>
+<ul>
+  <li><a href=""><img src="Images/Cliff Jump.jpg" id="img1" alt="Cliff Jump Picture"></a></li>
+  <li><a href=""><img src="Images/CliffJump2.jpg" id="img2" alt="Cliff Jump Picture 2"></a></li>
+  <li><a href=""><img src="Images/CliffJump3.jpg" id="img3" alt="Cliff Jump Picture 3"></a></li>
+  <li><a href=""><img src="Images/MountainsPic.jpg" id="img4"alt="Me In The Mountains"></a></li>
+  <li><a href=""><img src="Images/ResBMX.jpg" id="img5"alt="BMX At The Reservoir"></a></li>
+  <li><a href=""><img src="Images/RiverwalkBMX.jpg" id="img6"alt="BMX Tricks At The Riverwalk"></a></li>
+  <li><a href=""><img src="Images/SeniorPhoto.jpg" id="img7"alt="High School Senior Photo"></a></li>
+  <li><a href=""><img src="Images/TieDyeTacoTuesday.jpg" id="img8"alt="Tie-Dye Taco Tuesday"></a></li>
+  <li><a href=""><img src="Images/Whip BMX.jpg" id="img9"alt="Flatland BMX tricks"></a></li>
+  <li><a href=""><img src="Images/1stAlbumCover.jpg" id="img10"alt="1st Album Cover"></a></li>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-</script>
-
-
+</ul>
 </body>
 </html>

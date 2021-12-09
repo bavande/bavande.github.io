@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+
+
+/* nav styles */
+#logo{
+    float:left;
+    display: inline-block;
+}
+nav, footer {
+    font-family: verdana, sans-serif;   
+  }
+  nav{
+      
+      padding-top:1.5em;
+      padding-bottom: 2.5em;
+      text-align: end;
+      float: inline-end;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    text-align: end;
+    flex-wrap: nowrap;
+  }
+  
+  nav ul li {
+   font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color:rgb(0, 2, 1);
+    text-align: end;
+    flex: 1 1 50%;
+  }
+  nav ul li a { 	
+    display: block; 	
+    padding: .5em 1em; 	
+    text-align: end;
+    color:rgb(0, 0, 0);
+    } 
+ header {
+    background:  url(images/coffee-roaster-hero.jpg) no-repeat center center;
+    background-size: cover; 
+    background-color: plum;
+    text-align: center;
+    height: 35em;
+    opacity: 0.6;
+    justify-content: bottom;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    border:2px solid rgb(5, 0, 0);
+  }
+
+.midbanner {  
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 1.15em;
+    font-stretch:wider;
+    color:rgb(255, 255, 255);
+    width: 1;
+    text-align:center;
+    font-style: italic;
+    background-color: #7476ED;
+    }  
+
+.bottombanner {  
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+    font-size: 1.25em;
+    color:rgb(255, 255, 255);
+    width: 1;
+    text-align:left;
+    background-color: #7476ED;
+        }  
+        .footer {  
+            justify-content: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            font-size: 1.15em;
+            font-stretch:wider;
+            color:rgb(255, 255, 255);
+            width: 1;
+            text-align:center;
+            font-style: italic;
+            background-color: #3A3B7B;
+            }  
+
+ .about {  
+    border-color: rgb(255, 255, 255);  
+    border-style: double;  
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    }  
+
+h5{
+    font-size: .75em;
+    font-weight: 50;
+    text-align: center;
+}
+h6{
+    font-size: .75em;
+    font-weight: 50;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+h7{
+    font-size: 1.25em;
+    text-align: left;
+    padding-left: 40px;
+}
+h8{
+    font-size: 3.5em;
+    color:rgb(255, 255, 255);
+    vertical-align: bottom;
+}
